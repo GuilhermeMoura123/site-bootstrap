@@ -10,8 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 
 </head>
 
@@ -160,7 +161,8 @@
             <div class="col-12 text-center my-5">
                 <!-- my é a margem de todo o eixo y -->
 
-                <h1 class="display-3"> The standard Lorem Ipsum passage, used since the 1500s </h1>
+                <h1 class="display-3"> <i class="fa fa-cogs" aria-hidden="true"></i> The standard Lorem Ipsum passage,
+                    used since the 1500s </h1>
                 <!-- Classe display serve para aumentar mais a letra - variação de 1 a 5 -->
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -388,7 +390,7 @@
 
                 <div class="col-12 text-center">
 
-                    <h1 class="display-4"> ut aut reiciendis </h1>
+                    <h1 class="display-4"> <i class="fa fa-video-camera" aria-hidden="true"></i> ut aut reiciendis </h1>
                     <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able
                         to do what we like best</p>
                     <hr>
@@ -403,17 +405,17 @@
 
                     <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
 
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
                                 perferendis doloribus </a>
                         </li>
 
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02"> Et harum
                                 quidem </a>
                         </li>
 
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03"> saepe eveniet
                             </a>
                         </li>
@@ -521,6 +523,132 @@
 
             </div>
 
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12 text-center my-5">
+
+                        <h1 class="display-4"> <i class="fa fa-paper-plane" aria-hidden="true"></i> T otam rem aperiam
+                        </h1>
+
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-center mb-5">
+
+                    <div class="col-sm-12 col-md-10 col-lg-8">
+                        <!-- col-sm-12 para que ocupe todo o espaço no tamano sm + 
+                             md-10 para não ser tão largo na versão média + lg-8 
+                             para não ser tão grande na versão lg -->
+
+                        <form>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-sm-6">
+
+                                    <label for="inputNome"> Seu nome </label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+                                </div>
+
+                                <div class="form-group col-sm-6">
+
+                                    <label for="inputSobrenome"> Seu sobrenome </label>
+                                    <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-sm-12">
+
+                                    <label for="inputEnd"> Seu endereço </label>
+                                    <input type="text" class="form-control" id="inputEnd"
+                                        placeholder="endereço completo">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+
+                                    <label for="inputCidade"> Sua cidade </label>
+                                    <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+
+                                </div>
+
+                                <div class="form-group col-sm-4">
+
+                                    <label for="inputEst">Seu estado</label>
+                                    <select id="inputEst" class="form-control">
+
+                                        <option selected> Escolha... </option>
+                                        <option> ... </option>
+                                        <option> ... </option>
+                                        <option> ... </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group col-sm-2">
+
+                                    <label for="inputCep"> Seu CEP </label>
+                                    <input type="text" class="form-control" id="inputCep">
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-sm-12">
+
+                                    <div class="form-check">
+
+                                        <label class="form-check-label">
+
+                                            <input class="form-check-input" type="checkbox"> Desejo receber novidades
+                                            por e-mail
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="col-sm-12">
+
+                                    <button type="submit" class="btn btn-primary"> Enviar </button>
+
+                                    <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover"
+                                        data-placement="right" data-trigger="focus" title=" Lorem Ipsum"
+                                        data-content=" If you are going to use a passage of Lorem Ipsum, you need to be sure there">
+                                        Ajuda </a>
+
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
 
@@ -604,6 +732,22 @@
             <script src="node_modules/jQuery/dist/jQuery.js"></script>
             <script src="node_modules/popper.js/dist/umd/popper.js"></script>
             <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+            <!-- Função Js para executar o popover -->
+            <script>
+
+
+                $(function () {
+
+                    $('[data-toggle="popover"]').popover()
+
+
+                })
+
+            </script>
+
+
 </body>
 
 </html>
